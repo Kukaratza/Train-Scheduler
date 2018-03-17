@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+    <!-- <link rel="stylesheet" href="assets/style.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Anytime Is Train Time</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <table class="table table-striped">
+
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (Min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ${Dynamic} table goes in here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="container">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-12">
+                            <label for="inputName">Train Name</label>
+                            <input type="name" class="form-control" id="inputName" placeholder="">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="inputDestination">Destination</label>
+                            <input type="role" class="form-control" id="inputDestination" placeholder="">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="inputFirstTrain">First Train Time {hh:mm - Military Time}</label>
+                            <input type="startDate" class="form-control" id="inputFirstTrain" placeholder="">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="inputFreq">Frequency (Min)</label>
+                            <input type="Monthly Rate" class="form-control" id="inputFreq" placeholder="">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/train.js"></script>
+</body>
+
+</html>
